@@ -1,0 +1,74 @@
+/* CSS Document */
+html,body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	color: #323232;
+}
+body {
+	width: 100%;
+}
+.navigation ul li,li a {
+	list-style: none;
+	text-decoration: none;
+	color: #323232;
+}
+.navigation{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	background: gray;
+}
+.nav-menu{
+	display: flex;
+	justify-content: space-between;
+}
+.menu-item{
+	margin:0;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+.menu-link {
+	display: block;
+	width: 100%;
+	margin: 0;
+	
+	
+}
+.menu-link:hover{
+	color:gray;
+	background: #323232;
+}
+@media only screen and (max-width: 400px){
+	.navigation{
+		margin: 0;
+		flex-wrap: wrap;
+		align-items: flex-start;
+		
+	}
+	.menu-item{
+		text-align: center;
+	}
+	.navigation .nav-menu .menu-item:not(:first-child){
+		display: none;
+	}
+	.nav-menu:hover .menu-item:not(:first-child){
+		display: flex;
+
+	}
+	.nav-menu{
+		padding: 0;
+		margin: 0;
+		flex-wrap: wrap;
+		width: 100%;
+	}
+	.menu-item{
+		margin: 0;
+		width: 100%;
+		background: gray;
+	}
+	.menu-link{
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+}
